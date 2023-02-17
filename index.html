@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Iterable Campaign Naming</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- js
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js" async></script>
+  <script src="./js/script.js" async></script>
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="margin-top: 5%; margin-bottom: 10%;">
+    <div class="row">
+      <div class="one-half column">
+        <h4>Iterable Suppression List Selector</h4>
+        <p>Enter your information below to generate the appropriate suppression lists for your campaign.</p>
+      </div>
+    </div>
+
+
+    <!---------->
+    <div class="row">
+      <div class="one-half column">
+        <div> <label for="channel">Channel</label>
+          <select class="u-full-width" id="channel">
+            <option disabled selected value> -- select an option -- </option>
+            <option value='
+            {"listId":"2251569","listName":"[DD]Suppression-CoreSuppression-Email", "labelName": "email"}'>Email</option>
+            <option value='
+            {"listId":"2251580","listName":"[DD]Suppression-CoreSuppression-Push", "labelName": "push"}'>Push</option>
+          </select></div>
+      </div>
+    </div>
+    <!---------->
+     <!---------->
+ <div class="row">
+  <div class="one-half column">
+    <div> <label for="campaignType">Campaign Type</label>
+      <select class="u-full-width" id="campaignType">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="blast">Blast</option>
+        <option value="journey">Journey</option>
+
+      </select></div>
+  </div>
+</div>
+<!---------->
+    <!---------->
+    <div class="row">
+      <div class="one-half column">
+        <div> <label for="location">Location</label>
+          <select class="u-full-width" id="location">
+            <option disabled selected value> -- select an option -- </option>
+            <option value='
+            {"listId":"2251587","listName":"[DD]Supression-LocationSuppression-OnlyUS", "labelName": "us"}'>United States</option>
+            <option value='
+            {"listId":"2251592","listName":"[DD]Supression-LocationSuppression-OnlyCanada", "labelName": "ca"}'>Canada</option>
+            <option value='
+            {"listId":"2251618","listName":"[DD]Supression-LocationSuppression-OnlyAus", "labelName": "au"}'>Australia</option>
+            <option value='
+            {"listId":"2251623","listName":"[DD]Supression-LocationSuppression-OnlyNZ", "labelName": "nz"}'>New Zealand</option>
+          </select></div>
+      </div>
+    </div>
+    <!---------->
+    <!---------->
+    <div class="row">
+      <div class="one-half column">
+        <div> <label for="lob">Line of Business</label>
+          <select class="u-full-width" id="lob">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="cx">Consumer</option>
+            <option value="ddfw">DoorDash For Work</option>
+
+          </select></div>
+      </div>
+    </div>
+    <!---------->
+
+
+    <!-----CX Email MT----->
+    <div class="row hide" id="cxemtDiv">
+      <div class="one-half column">
+        <div> <label for="cxeMT">Consumer Email Message Type</label>
+          <select class="u-full-width" id="cxeMT">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="e-storePromotions">Email - Store Promotions</option>
+            <option value="e-recommendations">Email - Recommendations</option>
+            <option value="e-notificationsAndReminders">Email - Notifications & Reminders</option>
+            <option value="e-specialOffers">Email - Special Offers</option>
+            <option value="e-research">Email - Research</option>
+            <option value="e-newsAndUpdates">Email - News & Updates</option>
+
+          </select></div>
+      </div>
+    </div>
+    <!---------->
+
+    <!-----CX Push MT----->
+    <div class="row hide" id="cxpmtDiv">
+      <div class="one-half column">
+        <div> <label for="cxpMT">Consumer Push Message Type</label>
+          <select class="u-full-width" id="cxpMT">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="p-storePromotions">Push - Store Promotions</option>
+            <option value="p-recommendations">Push - Recommendations</option>
+            <option value="p-notificationsAndReminders">Push - Notifications & Reminders</option>
+            <option value="p-specialOffers">Push - Special Offers</option>
+            <option value="p-research">Push - Research</option>
+            <option value="p-newsAndUpdates">Push - News & Updates</option>
+
+          </select></div>
+      </div>
+    </div>
+    <!---------->
+    <!-----DDFW Email MT----->
+    <div class="row hide" id="ddfwmtDiv">
+      <div class="one-half column">
+        <div> <label for="ddfweMT">DoorDash For Work Message Type</label>
+          <select class="u-full-width" id="ddfweMT">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="cx">Fill out DDFW MT's here</option>
+           
+
+          </select></div>
+      </div>
+    </div>
+    <!---------->
+
+
+   
+    <div class="row" style="padding-top: 30px;">
+      <div class="one-half column" id="submitDiv">
+        <div><input class="button-primary" type="submit" value="Get Lists" id="submitButton">
+        </div>
+      </div>
+    </div>
+
+
+<!-- List section-->
+
+<div class="row hide" id="channelListDiv" >
+  <div class="eleven columns" style="padding-top: 10px;">
+    <div>
+      <pre><code id="channelList"></code></pre>
+    </div>
+  </div>
+  <div class="one column" style="padding-top: 10px;">
+    <!-- Trigger -->
+    <div>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+        <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row hide" id="locationListDiv" >
+  <div class="eleven columns" style="padding-top: 10px;">
+    <div>
+      <pre><code id="locationList"></code></pre>
+    </div>
+  </div>
+  <div class="one column" style="padding-top: 10px;">
+    <!-- Trigger -->
+    <div>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+        <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="row hide" id="mediumListDiv" >
+  <div class="eleven columns" style="padding-top: 10px;">
+    <div>
+      <pre><code id="mediumList"></code></pre>
+    </div>
+  </div>
+  <div class="one column" style="padding-top: 10px;">
+    <!-- Trigger -->
+    <div>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+        <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="row hide" id="campaignListDiv" >
+  <div class="eleven columns" style="padding-top: 10px;">
+    <div>
+      <pre><code id="campaignList"></code></pre>
+    </div>
+  </div>
+  <div class="one column" style="padding-top: 10px;">
+    <!-- Trigger -->
+    <div>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+        <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
