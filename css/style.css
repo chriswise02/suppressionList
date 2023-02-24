@@ -16,3 +16,6 @@ pre {
 .show {
     display: block;
 }
+pre > code{
+    white-space: normal;
+}

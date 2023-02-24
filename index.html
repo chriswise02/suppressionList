@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -33,8 +34,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
     integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous" ></script>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js" async></script>
-  <script src="./js/script.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js" ></script>
+  <script src="./js/script.js"></script>
+  
+
 
 </head>
 
@@ -117,12 +120,14 @@
         <div> <label for="cxeMT">Consumer Email Message Type</label>
           <select class="u-full-width" id="cxeMT">
             <option disabled selected value> -- select an option -- </option>
-            <option value="e-storePromotions">Email - Store Promotions</option>
-            <option value="e-recommendations">Email - Recommendations</option>
-            <option value="e-notificationsAndReminders">Email - Notifications & Reminders</option>
-            <option value="e-specialOffers">Email - Special Offers</option>
-            <option value="e-research">Email - Research</option>
-            <option value="e-newsAndUpdates">Email - News & Updates</option>
+            <option value='{"listId":"2306423","listName":"[DD]Suppression-MediumSuppression-Email-StorePromotions", "labelName": "emailStorePromotions"}'
+            >Email - Store Promotions</option>
+            <option value='{"listId":"2306427","listName":"[DD]Suppression-MediumSuppression-Email-Recommendations", "labelName": "emailRecommendations"}'>Email - Recommendations</option>
+            <option value='{"listId":"2306430","listName":"[DD]Suppression-MediumSuppression-Email-N&R", "labelName": "emailNotificationAndReminders"}'>Email - Notifications & Reminders</option>
+            <option value='{"listId":"2306432","listName":"[DD]Suppression-MediumSuppression-Email-SpecialOffers", "labelName": "emailSpecialOffers"}'
+            >Email - Special Offers</option>
+            <option value='{"listId":"2306437","listName":"[DD]Suppression-MediumSuppression-Email-Research", "labelName": "emailResearch"}'>Email - Research</option>
+            <option value='{"listId":"2306441","listName":"[DD]Suppression-MediumSuppression-Email-N&U", "labelName": "emailNewsAndUpdates"}'>Email - News & Updates</option>
 
           </select></div>
       </div>
@@ -135,12 +140,11 @@
         <div> <label for="cxpMT">Consumer Push Message Type</label>
           <select class="u-full-width" id="cxpMT">
             <option disabled selected value> -- select an option -- </option>
-            <option value="p-storePromotions">Push - Store Promotions</option>
-            <option value="p-recommendations">Push - Recommendations</option>
-            <option value="p-notificationsAndReminders">Push - Notifications & Reminders</option>
-            <option value="p-specialOffers">Push - Special Offers</option>
-            <option value="p-research">Push - Research</option>
-            <option value="p-newsAndUpdates">Push - News & Updates</option>
+            <option value='{"listId":"2306451","listName":"[DD]Suppression-MediumSuppression-Push-StoreOffers", "labelName": "pushStoreOffers"}'>Push - Store Offers</option>
+            <option value='{"listId":"2306456","listName":"[DD]Suppression-MediumSuppression-Push-Recommendations", "labelName": "pushRecommendations"}'>Push - Recommendations</option>
+            <option value='{"listId":"2306464","listName":"[DD]Suppression-MediumSuppression-Push-Reminders", "labelName": "pushReminders"}'>Push - Reminders</option>
+            <option value='{"listId":"2306469","listName":"[DD]Suppression-MediumSuppression-Push-DoorDashOffers", "labelName": "pushDoorDashOffers"}'>Push - DoorDash Offers</option>
+            <option value='{"listId":"2306473","listName":"[DD]Suppression-MediumSuppression-Push-N&U", "labelName": "pushNewsAndUpdates"}'>Push - News & Updates</option>
 
           </select></div>
       </div>
@@ -152,7 +156,13 @@
         <div> <label for="ddfweMT">DoorDash For Work Message Type</label>
           <select class="u-full-width" id="ddfweMT">
             <option disabled selected value> -- select an option -- </option>
-            <option value="cx">Fill out DDFW MT's here</option>
+            <option value='{"listId":"2312522","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-SalesInformation", "labelName": "emailSalesInfo"}'>DDFW - Sales Information</option>
+            <option value='{"listId":"2312524","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-AccountPerformance", "labelName": "emailDDFWAccountPerformance"}'>DDFW - Account Performance and Insights</option>
+            <option value='{"listId":"2312528","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-Notifications", "labelName": "emailDDFWNotifications"}'>DDFW - Notifications and Reminders</option>
+            <option value='{"listId":"2312536","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-CustomerResearch", "labelName": "emailDDFWCustomerResearch"}'>DDFW - Customer Research</option>
+            <option value='{"listId":"2312544","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-SpecialOffers", "labelName": "emailDDFWSpecialOffers"}'>DDFW - Special Offers</option>
+            <option value='{"listId":"2312547","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-News", "labelName": "emailDDFWNews"}'>DDFW - News and product updates</option>
+            <option value='{"listId":"2312549","listName":"[DD]Suppression-MediumSuppression-Email-DDFW-AccountSupport", "labelName": "emailDDFWAccountSupport"}'>DDFW - Account Support and Education</option>
            
 
           </select></div>
@@ -161,27 +171,35 @@
     <!---------->
 
 
-   
+   <!-- button row -->
     <div class="row" style="padding-top: 30px;">
-      <div class="one-half column" id="submitDiv">
+      <div class="one-third column" id="submitDiv">
         <div><input class="button-primary" type="submit" value="Get Lists" id="submitButton">
         </div>
       </div>
+      <div class="one-third column hide" id="resetDiv">
+        <div><input class="button-secondary" type="submit" value="Reset" id="resetButton">
+        </div>
+      </div>
     </div>
+
+    <!-- end button row -->
 
 
 <!-- List section-->
 
 <div class="row hide" id="channelListDiv" >
-  <div class="eleven columns" style="padding-top: 10px;">
-    <div>
-      <pre><code id="channelList"></code></pre>
+  <div class="nine columns" style="padding-top: 10px;">
+    <div><span class="h4">Core Suppression</span>
+      <pre><code>
+        <span id="channelList"></span> - <span id="channelListName"></span>
+      </code></pre>
     </div>
   </div>
   <div class="one column" style="padding-top: 10px;">
     <!-- Trigger -->
-    <div>
-      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+    <div style="padding-top: 22px;"">
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#channelList" id="channelCopyButton">
         <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
       </button>
     </div>
@@ -191,15 +209,17 @@
 
 
 <div class="row hide" id="locationListDiv" >
-  <div class="eleven columns" style="padding-top: 10px;">
-    <div>
-      <pre><code id="locationList"></code></pre>
+  <div class="nine columns" style="padding-top: 10px;">
+    <div><span class="h4">Location Suppression</span>
+      <pre><code>
+        <span id="locationList"></span> - <span id="locationListName"></span>
+      </code></pre>
     </div>
   </div>
   <div class="one column" style="padding-top: 10px;">
     <!-- Trigger -->
-    <div>
-      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+    <div style="padding-top: 22px;"">
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#locationList" id="locationCopyButton">
         <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
       </button>
     </div>
@@ -208,15 +228,17 @@
 
 
 <div class="row hide" id="mediumListDiv" >
-  <div class="eleven columns" style="padding-top: 10px;">
-    <div>
-      <pre><code id="mediumList"></code></pre>
+  <div class="nine columns" style="padding-top: 10px;">
+    <div> <span class="h4">Channel Suppression</span>
+      <pre><code>
+        <span id="mediumList"></span> - <span id="mediumListName"></span>
+      </code></pre>
     </div>
   </div>
   <div class="one column" style="padding-top: 10px;">
     <!-- Trigger -->
-    <div>
-      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+    <div style="padding-top: 22px;">
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#mediumList" id="mediumCopyButton">
         <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
       </button>
     </div>
@@ -225,15 +247,17 @@
 
 
 <div class="row hide" id="campaignListDiv" >
-  <div class="eleven columns" style="padding-top: 10px;">
-    <div>
-      <pre><code id="campaignList"></code></pre>
+  <div class="nine columns" style="padding-top: 10px;">
+    <div><span class="h4">Campaign Suppression</span>
+      <pre><code>
+        <span id="campaignList">2311570</span> - <span id="campaignListName">[DD]Suppression-CampaignSuppression</span>
+      </code></pre>
     </div>
   </div>
   <div class="one column" style="padding-top: 10px;">
     <!-- Trigger -->
-    <div>
-      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignFullName" id="copyButton">
+    <div style="padding-top: 22px;">
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target="#campaignList" id="campaignCopyButton">
         <img src="./images/copy-icon.png" alt="Copy to clipboard" class="copyIcon" />
       </button>
     </div>
