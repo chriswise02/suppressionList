@@ -63,28 +63,19 @@ document.addEventListener(
       var mediumValObject = document.querySelector("#cxpMT").value;
       var mediumVal = JSON.parse(mediumValObject);
     }
-  
-   
-
     // reveal reset button
     resetButtonRemove = document.getElementById("resetDiv");
     resetButtonRemove.classList.remove("hide");
 
-    // write values to page (i know this is ugly)
-    var firstList = document.getElementById("channelList");
-    firstList.innerText = channelVal.listId;
-    var firstListName = document.getElementById("channelListName");
-    firstListName.innerText = channelVal.listName;
+    // write values to page 
+   document.getElementById("channelList").innerText = channelVal.listId;
+   document.getElementById("channelListName").innerText = channelVal.listName;
 
-    var secondList = document.getElementById("locationList");
-    secondList.innerText = locationVal.listId;
-    var secondListName = document.getElementById("locationListName");
-    secondListName.innerText = locationVal.listName;
+   document.getElementById("locationList").innerText = locationVal.listId;
+   document.getElementById("locationListName").innerText = locationVal.listName;
 
-    var element = document.getElementById("channelListDiv");
-    element.classList.remove("hide");
-    var element1 = document.getElementById("locationListDiv");
-    element1.classList.remove("hide");
+    document.getElementById("channelListDiv").classList.remove("hide");
+    document.getElementById("locationListDiv").classList.remove("hide");
     var element2 = document.getElementById("mediumListDiv");
     var element3 = document.getElementById("campaignListDiv");
     element3.classList.remove("hide");
@@ -92,10 +83,8 @@ document.addEventListener(
     if (campaignTypeval == "blast") {
       element2.classList.remove("hide");
 
-      var thirdList = document.getElementById("mediumList");
-      thirdList.innerText = mediumVal.listId;
-      var thirdListName = document.getElementById("mediumListName");
-      thirdListName.innerText = mediumVal.listName;
+      document.getElementById("mediumList").innerText = mediumVal.listId;
+      document.getElementById("mediumListName").innerText = mediumVal.listName;
     }
     //clipboard
     var btns = document.querySelectorAll("button");
