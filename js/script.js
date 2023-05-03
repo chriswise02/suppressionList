@@ -76,9 +76,12 @@ document.addEventListener(
 
     document.getElementById("channelListDiv").classList.remove("hide");
     document.getElementById("locationListDiv").classList.remove("hide");
+
     var element2 = document.getElementById("mediumListDiv");
     var element3 = document.getElementById("campaignListDiv");
+    var element4 = document.getElementById("warningDiv");
     element3.classList.remove("hide");
+    element4.classList.remove("hide");
 
     if (campaignTypeval == "blast") {
       element2.classList.remove("hide");
